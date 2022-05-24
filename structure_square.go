@@ -1,9 +1,5 @@
 package structure_square
 
-import (
-	"fmt"
-)
-
 type Point struct {
 	x, y int
 }
@@ -25,12 +21,12 @@ func NewSquare(startPoint1 Point) (s Square) {
 	return s
 }
 
-func (s *Square) area() int {
+func (s *Square) Area() int {
 	side := s.startPoint2.x - s.startPoint1.x
 	return side * side
 }
 
-func (s *Square) perimeter() int {
+func (s *Square) Perimeter() int {
 	side := s.startPoint2.x - s.startPoint1.x
 	return side * 4
 }
