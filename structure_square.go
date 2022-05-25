@@ -7,7 +7,8 @@ type Point struct {
 type Square struct {
 	startPoint1, endPoint1, startPoint2, endPoint2 Point
 }
-func NewPoint(x, y int) Point{
+
+func NewPoint(x, y int) Point {
 	return Point{x, y}
 }
 func NewSquare(startPoint1 Point) (s Square) {
